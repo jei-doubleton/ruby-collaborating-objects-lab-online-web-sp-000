@@ -17,7 +17,7 @@ class Song
 
     @artist.add_song(self)
 
-    self
+    #self
 
   end
 
