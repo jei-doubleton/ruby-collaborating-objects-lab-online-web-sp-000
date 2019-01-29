@@ -9,15 +9,13 @@ class Song
 
   def artist=(artist_name)
 
-    if artist_name.class == String
+    # if artist_name.class == String
       @artist = Artist.find_or_create_by_name(artist_name)
-    else
-      @artist = artist_name
-    end
+    # else
+    #   @artist = artist_name
+    # end
 
     @artist.add_song(self)
-
-    #self
 
   end
 
